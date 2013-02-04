@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+  <validators>
+  <!--  
+       <field name="user.username">
+            <field-validator type="requiredstring">
+                 <message>username should not be blank !</message>
+            </field-validator>
+       </field>
+       
+       <field name="user.password">
+            <field-validator type="requiredstring">
+                 <message>password should not be blank !</message>
+            </field-validator>
+       </field>
+       
+       <field name="user.age">
+            <field-validator type="required">
+                 <message>age should not be blank !</message>
+            </field-validator>
+            
+            <field-validator type="int">
+                 <param name="min">1</param>
+                 <param name="max">150</param>
+                 <message>age should be between ${min} and ${max}</message>
+            </field-validator>
+       </field>
+  -->
+  <field name="user">
+       <field-validator type="visitor">
+            <param name="context">user</param>
+            <param name="appendPrefix">true</param>
+            <message>user' </message>
+       </field-validator>
+  </field>
+  </validators>

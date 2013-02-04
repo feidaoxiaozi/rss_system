@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="net.wukong.rssnews">
+
+	<class name="net.wukong.rssnews.RssNews" table="rsslist">
+
+		
+		<id name="newsId" column="newsId">
+			<generator class="assigned" />
+		</id>
+		<property name="title" column="title"/>	
+        <property name="url" column="URL"/>			
+		<property name="resourceAndTime" column="resourceAndTime"/>
+		<property name="attention" column="attention"/>
+	</class>
+
+</hibernate-mapping>

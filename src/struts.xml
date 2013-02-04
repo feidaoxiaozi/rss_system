@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+<!--  
+	<package name="user" extends="struts-default">
+		<action name="addUser" class="SaveUserAction">
+			
+			<result name="success" type="redirect">
+				ListUser.action
+			</result>
+			<result name="input">/save.jsp</result>
+		</action>
+
+		<action name="ListUser" class="ListUserAction">
+			<result name="success">/list.jsp</result>
+		</action>
+
+		<action name="deleteUser" class="DeleteUserAction">
+			<result name="success" type="redirect">
+				ListUser.action
+			</result>
+		</action>
+
+		<action name="updatePUser" class="UpdatePUserAction">
+			
+			<result name="success">/update.jsp</result>
+		</action>
+
+		<action name="updateUser" class="UpdateUserAction">
+			<result name="success" type="redirect">
+				ListUser.action
+			</result>
+			<result name="input">/update.jsp</result>
+		</action>
+	</package>
+	-->
+	<package name="rssNews" extends="struts-default">
+	
+	       <action name="listRssNews" class="ListNewsAction">
+			<result name="success">/listNews.jsp</result>
+		</action>
+		 <action name="loadSzywNews" class="LoadSzywAction">
+			<result name="success" type="redirect">
+				listRssNews.action
+			</result>
+		</action>
+		
+		<action name="loadTwNews" class="LoadNewsAction">
+			<result name="success" type="redirect">
+				listRssNews.action
+			</result>
+		</action>
+		
+		<action name="loadGangAoNews" class="LoadNewsAction">
+			<result name="success" type="redirect">
+				listRssNews.action
+			</result>
+		</action>
+		
+		<action name="loadhqsyNews" class="LoadNewsAction">
+			<result name="success" type="redirect">
+				listRssNews.action
+			</result>
+		</action>
+	</package>
+
+</struts>

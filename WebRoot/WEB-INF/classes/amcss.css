@@ -1,0 +1,235 @@
+body {
+
+	background:#ff9900; font-size: 12px; margin-top:0px;
+ 
+
+	SCROLLBAR-FACE-COLOR: #ff9900; SCROLLBAR-HIGHLIGHT-COLOR: #ffcc00; 
+
+	SCROLLBAR-SHADOW-COLOR: #FFcc00; SCROLLBAR-DARKSHADOW-COLOR: #FFCC00; 
+
+	SCROLLBAR-3DLIGHT-COLOR: #FF6600; SCROLLBAR-ARROW-COLOR: #FFee00;
+
+	SCROLLBAR-TRACK-COLOR: #FFcc00;
+
+}
+
+TD {
+
+	FONT-SIZE: 12px
+
+}
+
+INPUT {
+
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+
+}
+
+TEXTAREA {
+
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+
+}
+
+SELECT {
+
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+
+}
+
+SPAN {
+
+	FONT-SIZE: 12px; POSITION: static
+
+}
+
+A {
+
+	COLOR: #000000; TEXT-DECORATION: none
+
+}
+
+A:hover { color:#428EFF;text-decoration:underline; }
+
+A.highlight {
+
+	COLOR: red; TEXT-DECORATION: none
+
+}
+
+A.highlight:hover {
+
+	COLOR: red
+
+}
+
+A.thisclass {
+
+	FONT-WEIGHT: bold; TEXT-DECORATION: none
+
+}
+
+A.thisclass:hover {
+
+	FONT-WEIGHT: bold
+
+}
+
+A.navlink {
+
+	COLOR: #000000; TEXT-DECORATION: none
+
+}
+
+A.navlink:hover {
+
+	COLOR: #003399; TEXT-DECORATION: none
+
+}
+
+.twidth {
+
+	WIDTH: 760px
+
+}
+
+.content {
+
+	FONT-SIZE: 14px; MARGIN: 5px 20px; LINE-HEIGHT: 140%; FONT-FAMILY: Tahoma,ËÎÌו
+
+}
+
+.aTitle {
+
+	FONT-WEIGHT: bold; FONT-SIZE: 15px
+
+}
+
+TD.forumHeaderBackgroundAlternate {
+
+	BACKGROUND-IMAGE: url(images/admin_top_bg.gif); COLOR: #000000; BACKGROUND-COLOR: #799ae1
+
+}
+
+#TableTitleLink A:link {
+
+	COLOR: #ffffff; TEXT-DECORATION: none
+
+}
+
+#TableTitleLink A:visited {
+
+	COLOR: #ffffff; TEXT-DECORATION: none
+
+}
+
+#TableTitleLink A:active {
+
+	COLOR: #ffffff; TEXT-DECORATION: none
+
+}
+
+#TableTitleLink A:hover {
+
+	COLOR: #ffffff; TEXT-DECORATION: underline
+
+}
+
+TD.amrow {
+
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #F7F7F7; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+
+}
+
+TH {
+
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(images/admin_bg_1.gif); COLOR: white; BACKGROUND-COLOR: #4455aa
+
+}
+
+TD.bt {
+
+	BACKGROUND-IMAGE: url(images/admin_bg_2.gif)
+
+}
+
+TD.bodytitle1 {
+
+	BACKGROUND-IMAGE: url(images/admin_bg_3.gif)
+
+}
+
+TD.tablebody1 {
+
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #bebbdb; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+
+}
+
+TD.amtd {
+
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #E4EDF9; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+
+}
+
+.tableBorder {
+
+	BORDER-RIGHT: #183789 1px solid; BORDER-TOP: #183789 1px solid; BORDER-LEFT: #183789 1px solid; WIDTH: 98%; BORDER-BOTTOM: #183789 1px solid; BACKGROUND-COLOR: #ffffff
+
+}
+
+.tableBorder1 {WIDTH: 98%; }
+
+.helplink {
+
+	FONT: 10px verdana,arial,helvetica,sans-serif; CURSOR: help; TEXT-DECORATION: none
+
+}
+
+.copyright {
+
+	PADDING-RIGHT: 1px; BORDER-TOP: #6595d6 1px dashed; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; FONT: 11px verdana,arial,helvetica,sans-serif; COLOR: #4455aa; PADDING-TOP: 1px; TEXT-DECORATION: none
+
+}
+
+.menuskin {
+
+	BORDER: #666666 1px solid; VISIBILITY: hidden; FONT: 12px Verdana;
+
+	POSITION: absolute; 
+
+	BACKGROUND-COLOR:#EFEFEF;
+
+	background-image:url("../skins/default/dvmenubg3.gif");
+
+	background-repeat : repeat-y;
+
+	}
+
+.menuskin A {
+
+	PADDING-RIGHT: 10px; PADDING-LEFT: 25px; COLOR: black; TEXT-DECORATION: none; behavior:url(inc/noline.htc);
+
+	}
+
+#mouseoverstyle {
+
+	BACKGROUND-COLOR: #C9D5E7; margin:2px; padding:0px; border:#597DB5 1px solid;
+
+	}
+
+#mouseoverstyle A {
+
+	COLOR: black
+
+}
+
+.menuitems{
+
+	margin:2px;padding:1px;word-break:keep-all;
+
+}.redfont {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF0000;
+}

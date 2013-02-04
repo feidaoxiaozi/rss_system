@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/rss_system">
+		</property>
+		<property name="username" value="root"></property>
+		<property name="password" value="123456"></property>
+		<property name="maxActive" value="100"></property>
+		<property name="maxIdle" value="30"></property>
+		<property name="maxWait" value="500"></property>
+		<property name="defaultAutoCommit" value="true"></property>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>net/wukong/rssnews/User.hbm.xml</value>
+				<value>net/wukong/rssnews/RssNews.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+<!--  
+	<bean id="userDao" class="net.wukong.dao.impl.UserDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="userService"
+		class="net.wukong.service.impl.UserServiceImpl">
+		<property name="userDao" ref="userDao"></property>
+		
+	</bean>
+
+	<bean id="SaveUserAction"
+		class="net.wukong.user.action.SaveUserAction" scope="prototype">
+		<property name="service" ref="userService"></property>
+	</bean>
+
+	<bean id="ListUserAction"
+		class="net.wukong.user.action.ListUserAction" scope="prototype">
+		<property name="service" ref="userService"></property>
+	</bean>
+
+	<bean id="DeleteUserAction"
+		class="net.wukong.user.action.DeleteUserAction" scope="prototype">
+		<property name="service" ref="userService"></property>
+	</bean>
+
+	<bean id="UpdatePUserAction"
+		class="net.wukong.user.action.UpdatePUserAction" scope="prototype">
+		<property name="service" ref="userService"></property>
+	</bean>
+
+	<bean id="UpdateUserAction"
+		class="net.wukong.user.action.UpdateUserAction" scope="prototype">
+		<property name="service" ref="userService"></property>
+	</bean>
+    -->
+    <bean id="rssNewsDao" class="net.wukong.dao.impl.RssNewsDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="rssNewsService"
+		class="net.wukong.service.impl.RssNewsServiceImpl">
+		<property name="rssNewsDao" ref="rssNewsDao"></property>		
+	</bean>
+	
+	<bean id="ListNewsAction"
+		class="net.wukong.rssnews.action.ListRssNewsAction" scope="prototype">
+		<property name="service" ref="rssNewsService"></property>
+	</bean>
+	<bean id="LoadSzywAction"
+		class="net.wukong.rssnews.action.LoadSzywNewsAction" scope="prototype">
+		<property name="service" ref="rssNewsService"></property>
+	</bean>
+	
+</beans>
