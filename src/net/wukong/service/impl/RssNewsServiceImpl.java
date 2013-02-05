@@ -23,7 +23,41 @@ public class RssNewsServiceImpl implements RssNewsService{
 
 	
 	public void loadSzywNews(RssNews rssNews) {		
-		this.rssNewsDao.loadRssNews(rssNews);
+		this.rssNewsDao.loadSzywNews(rssNews);
+		
+	}
+
+	public void loadTWNews(RssNews rssNews) {
+		this.rssNewsDao.loadTWNews(rssNews);
+		
+	}
+
+	public void loadGangAoNews(RssNews rssNews) {
+		this.rssNewsDao.loadGangAoNews(rssNews);
+		
+	}
+
+	public void loadHqsyNews(RssNews rssNews) {
+       this.rssNewsDao.loadHqsyNews(rssNews);		
+	}
+
+	public void loadGjrwNews(RssNews rssNews) {
+		this.rssNewsDao.loadGjrwNews(rssNews);
+		
+	}
+
+	public void loadZgjqNews(RssNews rssNews) {
+		this.rssNewsDao.loadZgjqNews(rssNews);
+		
+	}
+
+	public void loadThjjNews(RssNews rssNews) {
+		this.rssNewsDao.loadThjjNews(rssNews);
+		
+	}
+
+	public void loadGjjqNews(RssNews rssNews) {
+		this.rssNewsDao.loadGjjqNews(rssNews);
 		
 	}
 

@@ -8,9 +8,13 @@ public class RssNews {
 	
 	private String url;
 	
-	private String resourceAndTime;
+	private String resource;
+	
+	private String time;
 	
 	private String attention;
+
+	
 
 	public int getNewsId() {
 		return newsId;
@@ -18,6 +22,10 @@ public class RssNews {
 
 	public void setNewsId(int newsId) {
 		this.newsId = newsId;
+	}
+
+	public void setAttention(String attention) {
+		this.attention = attention;
 	}
 
 	public String getTitle() {
@@ -36,21 +44,23 @@ public class RssNews {
 		this.url = url;
 	}
 
-	public String getResourceAndTime() {
-		return resourceAndTime;
+	public String getResource() {
+		return resource;
 	}
 
-	public void setResourceAndTime(String resourceAndTime) {
-		this.resourceAndTime = resourceAndTime;
+	public void setResource(String resource) {
+		this.resource = resource;
+	}
+
+	public String getTime() {
+		return time;
+	}
+
+	public void setTime(String time) {
+		this.time = time;
 	}
 
 	public String getAttention() {
 		return attention;
 	}
-
-	public void setAttention(String attention) {
-		this.attention = attention;
-	}
-
-	
 }

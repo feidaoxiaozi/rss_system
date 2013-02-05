@@ -12,7 +12,8 @@
 		</id>
 		<property name="title" column="title"/>	
         <property name="url" column="URL"/>			
-		<property name="resourceAndTime" column="resourceAndTime"/>
+		<property name="resource" column="resource"/>
+		<property name="time" column="time"/>
 		<property name="attention" column="attention"/>
 	</class>
 

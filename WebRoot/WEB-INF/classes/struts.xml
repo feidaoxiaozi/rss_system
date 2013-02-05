@@ -49,19 +49,43 @@
 			</result>
 		</action>
 		
-		<action name="loadTwNews" class="LoadNewsAction">
+		<action name="loadTwNews" class="LoadTWAction">
 			<result name="success" type="redirect">
 				listRssNews.action
 			</result>
 		</action>
 		
-		<action name="loadGangAoNews" class="LoadNewsAction">
+		<action name="loadGangAoNews" class="LoadGangAoAction">
 			<result name="success" type="redirect">
 				listRssNews.action
 			</result>
 		</action>
 		
-		<action name="loadhqsyNews" class="LoadNewsAction">
+		<action name="loadhqsyNews" class="LoadHqsyAction">
+			<result name="success" type="redirect">
+				listRssNews.action
+			</result>
+		</action>
+		
+		<action name="loadGjrwNews" class="LoadGjrwAction">
+			<result name="success" type="redirect">
+				listRssNews.action
+			</result>
+		</action>
+		
+		<action name="loadZgjqNews" class="LoadZgjqAction">
+			<result name="success" type="redirect">
+				listRssNews.action
+			</result>
+		</action>
+		
+		<action name="loadThjjNews" class="LoadThjjAction">
+			<result name="success" type="redirect">
+				listRssNews.action
+			</result>
+		</action>
+		
+		<action name="loadGjjqNews" class="LoadGjjqAction">
 			<result name="success" type="redirect">
 				listRssNews.action
 			</result>

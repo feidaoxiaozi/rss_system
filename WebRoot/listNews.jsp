@@ -121,9 +121,10 @@ for(i=0;i<cs.length;i++){
        
         <td width="5%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">序号</span></div></td>
         <td width="25%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">新闻标题</span></div></td>
-        <td width="35%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">URL</span></div></td>
-        <td width="20%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">来源和时间</span></div></td>
-        <td width="15%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">关注度</span></div></td>
+        <td width="30%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">URL</span></div></td>
+        <td width="20%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">来源</span></div></td>
+        <td width="15%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">时间</span></div></td>
+        <td width="5%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">关注度</span></div></td>
         <!--  
         <td width="20%" height="30" bgcolor="d3eaef" class="STYLE6" colspan="2"><div align="center"><span class="STYLE10">操作</span></div></td>
         -->
@@ -134,7 +135,8 @@ for(i=0;i<cs.length;i++){
                    <td height="30" bgcolor="#FFFFFF" class="STYLE6"><div align="center"><span class="STYLE19"><s:property value="#rssNews.newsId"/></span></div></td>
                    <td height="30" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><s:property value="#rssNews.title"/></div></td>                  
                    <td height="30" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><s:property value="#rssNews.url"/></div></td>
-                   <td height="30" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><s:property value="#rssNews.resourceAndTime"/></div></td>                  
+                   <td height="30" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><s:property value="#rssNews.resource"/></div></td> 
+                   <td height="30" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><s:property value="#rssNews.time"/></div></td>                  
                    <td height="30" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><s:property value="#rssNews.attention"/></div></td> 
                       <!--                                                                                
                    <td height="30" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><s:a href="updatePRssNews.action?rssNews.newsId=%{#rssNews.newsId}">编辑</s:a></div></td>

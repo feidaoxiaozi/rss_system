@@ -91,4 +91,36 @@
 		<property name="service" ref="rssNewsService"></property>
 	</bean>
 	
+	<bean id="LoadTWAction"
+		class="net.wukong.rssnews.action.LoadTWNewsAction" scope="prototype">
+		<property name="service" ref="rssNewsService"></property>
+	</bean>
+	<bean id="LoadGangAoAction"
+		class="net.wukong.rssnews.action.LoadGangaoNewsAction" scope="prototype">
+		<property name="service" ref="rssNewsService"></property>
+	</bean>
+	<bean id="LoadHqsyAction"
+		class="net.wukong.rssnews.action.LoadHqsyNewsAction" scope="prototype">
+		<property name="service" ref="rssNewsService"></property>
+	</bean>
+	
+	<bean id="LoadGjrwAction"
+		class="net.wukong.rssnews.action.LoadGjrwNewsAction" scope="prototype">
+		<property name="service" ref="rssNewsService"></property>
+	</bean>
+	
+	<bean id="LoadZgjqAction"
+		class="net.wukong.rssnews.action.LoadZgjqNewsAction" scope="prototype">
+		<property name="service" ref="rssNewsService"></property>
+	</bean>
+	
+	<bean id="LoadThjjAction"
+		class="net.wukong.rssnews.action.LoadThjjNewsAction" scope="prototype">
+		<property name="service" ref="rssNewsService"></property>
+	</bean>
+	
+	<bean id="LoadGjjqAction"
+		class="net.wukong.rssnews.action.LoadGjjqNewsAction" scope="prototype">
+		<property name="service" ref="rssNewsService"></property>
+	</bean>
 </beans>

@@ -11,17 +11,18 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class GetNewsFromTaiW implements DataTransfer{
+public class GetNewsFromThjj implements DataTransfer{
     
-	public String getTaiwNews() throws IOException {//static void main(String[] args) throws IOException {// 
-		String szywUrl = null;
+	public String getThjj() throws IOException {//static void main(String[] args) throws IOException {// 
+		String thjjUrl = null;
 		for(int i=1;i<=2;i++){
 			if(i==1){
-				szywUrl = "http://news.baidu.com/n?cmd=4&class=taiwan&pn=1";
+				thjjUrl = "http://news.baidu.com/n?cmd=4&class=taihaijj&pn=1";
 			}if(i==2){
-				szywUrl = "http://news.baidu.com/n?cmd=4&class=taiwan&pn=2&sub=0";
+				thjjUrl = "http://news.baidu.com/n?cmd=4&class=taihaijj&pn=2&sub=0";
 			}
-		 Document doc = Jsoup.connect(szywUrl).get();
+		
+		 Document doc = Jsoup.connect(thjjUrl).get();
 
 		 Elements content = doc.select("div.p2 div");
 		 String url = null;
@@ -35,10 +36,11 @@ public class GetNewsFromTaiW implements DataTransfer{
 			 HashMap<String, Object> map=new HashMap<String, Object>();
 			 Elements a= item.getElementsByTag("a").not(".rnews");
 			 Elements spanRes = item.select(".c");	
-			 Elements spanAttr= item.getElementsByTag("span").not(".c"); 
+			 Elements spanAttr= item.getElementsByTag("span").not(".c");
 			 if(!spanAttr.hasText()){
+				
 				 spanAttr = spanRes;
-			 }		
+			 }			
 			 for(Element item_a:a){				 
 				 url= item_a.attr("href");
 				 title=item_a.text();
@@ -60,17 +62,17 @@ public class GetNewsFromTaiW implements DataTransfer{
 				 System.out.println(from);
 				 System.out.println(time);
 			 }
-			 for(Element item_span:spanAttr){				 
+			 for(Element item_span:spanAttr){
+				 System.out.println(item_span.text().equals(null));				 					 									 
 					 attention = item_span.text().replace(">>", "").replace("Ãıœ‡πÿ", ""); 
 					 map.put(ATTENTION, attention);
-					 System.out.println(attention);
-					 System.out.println("**********");
+					 System.out.println(attention); 				
 			 }	
 			 RssNewsDaoImpl.data.add(map);
 		}
 		System.out.println("~~~~~"+ RssNewsDaoImpl.data.size());	
 		 try {
-			Thread.sleep(30000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
