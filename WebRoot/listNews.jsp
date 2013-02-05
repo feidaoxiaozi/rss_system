@@ -123,8 +123,8 @@ for(i=0;i<cs.length;i++){
         <td width="25%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">新闻标题</span></div></td>
         <td width="30%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">URL</span></div></td>
         <td width="20%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">来源</span></div></td>
-        <td width="15%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">时间</span></div></td>
-        <td width="5%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">关注度</span></div></td>
+        <td width="10%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">时间</span></div></td>
+        <td width="10%" height="30" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">关注度</span></div></td>
         <!--  
         <td width="20%" height="30" bgcolor="d3eaef" class="STYLE6" colspan="2"><div align="center"><span class="STYLE10">操作</span></div></td>
         -->
